@@ -13,8 +13,11 @@ You must write an algorithm that runs in O(n) time and without using the divisio
 
 Pattern:
 **1** 2 3 4 => 1 * **( 2 * 3 * 4)** = **24** //When there is no number we use 1 [just for the pattern]
+
 1 **2** 3 4 => 1 * **( 3 * 4 )** = **12**
+
 1 2 **3** 4 => **(1 * 2)** * 4  = **8**
+
 1 2 3 **4** => **(1 * 2 * 3)** * 1  = **6** // When there is no number we use 1[just for the patten]
 
 To solve this problem we can find the induvidual product of the array from 
