@@ -15,3 +15,39 @@ The idea here is to buy the dip and sell when the stock reaches it's maximum.
 If <code>prices[R] - prices[L] < 0</code> which is negative then we move the left pointer to the right pointer position i.e., <code>L = R</code> and increment the rigth pointer <code>R++</code>
 
 Else we calculate the profit by <code>prices[R] - prices[L]</code> and increment the right pointer <code>R</code> and continue calculating the maximum profit until we reach the end of the array i.e., <code>index < lengthOfTheArray && R < lengthOFTheArray</code>
+
+### c++ code
+<code>
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int maxProfit(vector<int> &prices)
+{
+    int L = 0;
+    int R = 1;
+    int index = 0;
+    int maxProfit = 0;
+    int length = prices.size();
+    while(index < length && R < length) {
+        if((prices[R] - prices[L]) < 0){
+            L = R;
+            R++;
+        }
+        else {
+            if(maxProfit < (prices[R] - prices[L]))
+                maxProfit = prices[R] - prices[L];
+            R++;
+        }
+    }
+    return maxProfit;
+}
+
+int main()
+{
+    vector<int> prices = {2, 1, 2, 1, 0, 1, 2};
+
+    cout << maxProfit(prices) << endl;
+    return 0;
+}
+</code>
