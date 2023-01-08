@@ -17,7 +17,8 @@ If <code>prices[R] - prices[L] < 0</code> which is negative then we move the lef
 Else we calculate the profit by <code>prices[R] - prices[L]</code> and increment the right pointer <code>R</code> and continue calculating the maximum profit until we reach the end of the array i.e., <code>index < lengthOfTheArray && R < lengthOFTheArray</code>
 
 ### c++ code
-<code>
+
+````
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -50,4 +51,4 @@ int main()
     cout << maxProfit(prices) << endl;
     return 0;
 }
-</code>
+````
