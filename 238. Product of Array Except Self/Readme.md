@@ -10,6 +10,13 @@ You must write an algorithm that runs in O(n) time and without using the divisio
 
 ``` data = [1,2,3,4] ``` we need to find the product of the array without including itself and that would be ```output = [24,12,8,6]``` why ```24?``` when we are at ```index 0``` in ```data``` the product at that position is going to be ```2*3*4``` which equals to ```24``` as you can see in the ```output.```
 
+
+Pattern:
+**1** 2 3 4 => 1 * **( 2 * 3 * 4)** = **24** //When there is no number we use 1 [just for the pattern]
+1 **2** 3 4 => 1 * **( 3 * 4 )** = **12**
+1 2 **3** 4 => **(1 * 2)** * 4  = **8**
+1 2 3 **4** => **(1 * 2 * 3)** * 1  = **6** // When there is no number we use 1[just for the patten]
+
 To solve this problem we can find the induvidual product of the array from 
 
 ```Left to Right product from i=0 to i = n-1```
