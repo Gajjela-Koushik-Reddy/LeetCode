@@ -6,3 +6,4 @@
 |[238. Product of Array Except Self](./238.%20Product%20of%20Array%20Except%20Self/)|
 |[53. Maximum Subarray](./53.%20Maximum%20Subarray/)|
 |[152. Maximum Product Subarray](./152.%20Maximum%20Product%20Subarray/)|
+|[153. Find Minimum in Rotated Sorted Array](./153.%20Find%20Minimum%20in%20Rotated%20Sorted%20Array/)|
